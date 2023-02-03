@@ -9,9 +9,10 @@ function consultaCep(){
     let result = document.querySelector('#resultCep')
     let cepNumber = document.querySelector('#cep').value
 
-    if(cepNumber != 8){
-        result.innerHTML = "Algo está errado. Tente novamente!"
+   if(cepNumber.length < 8 ){
+        result.innerHTML = "Digite o CEP corretamente"
     }
+
 
     let linkjson = `https://viacep.com.br/ws/${cepNumber}/json/`
 
@@ -33,7 +34,11 @@ function showCep(dados){
       <p>Localidade: ${dados.localidade}</p>
       <p>UF: ${dados.uf}</p>
       <p>DDD: ${dados.ddd}</p>
+      
       `
+    if(dados.erro) {
+        result.innerHTML = "CEP não encontrado"
+    }
 
 }
 
