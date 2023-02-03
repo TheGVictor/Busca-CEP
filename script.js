@@ -30,7 +30,8 @@ function showCep(dados){
     let result = document.querySelector('#resultCep')
 
     result.innerHTML = 
-    `<p>Bairro: ${dados.bairro}</p>
+    `<p>${dados.logradouro}</p> 
+     <p>Bairro: ${dados.bairro}</p>
       <p>Localidade: ${dados.localidade}</p>
       <p>UF: ${dados.uf}</p>
       <p>DDD: ${dados.ddd}</p>
