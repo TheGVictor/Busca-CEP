@@ -1,6 +1,8 @@
 # Busca-CEP
-Um Buscador de CEP simples feito com JavaScript
+PT-BR: Um Buscador de CEP simples feito com JavaScript
 
-A simple Search CEP made in JavaScript
+EN: A simple Search CEP made in JavaScript
+
+https://thegvictor.github.io/Busca-CEP/
 
 
